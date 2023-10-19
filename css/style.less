@@ -3,6 +3,7 @@
 @dark-green: #1E6140;
 @light-green: #84C551;
 @orange: #E74E13;
+@brown:#8C3213;
 // MIXINS
 
 // GLOBAL STYLE
@@ -30,6 +31,25 @@ list-style: none;
     }
 
 }
+.svg-max {
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid @brown;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    stroke: @brown;
+    fill: @brown;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+        background-color:@brown;
+    }
+
+}
 body{
 font-family: 'Montserrat', sans-serif;
 background-color: #F8F8F8;
@@ -43,7 +63,7 @@ background-color: #F8F8F8;
    body{
     .container{
     min-width: 768px;
-   padding:0 50px;
+   padding:0 70px;
    }
   }
 }
@@ -51,10 +71,11 @@ background-color: #F8F8F8;
     body {
         .container {
             min-width: 1280px;
-            padding: 0 100px;
+            padding: 0 120px;
         }
     }
 }
 //IMPORTS
 @import 'header';
 @import 'mobail-menu';
+@import 'hero';
