@@ -183,7 +183,31 @@
         }
     }
     }
-    @media screen and (min-width:1100px) {
+    @media screen and (min-width:1000px) {
+        .hero{
+        .hero-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 100px;
+                & h1 {
+                        font-size: 55px;
+                        font-weight: 700;
+                        & span {
+                                font-size: 55px;
+                            }
+                    }
+                    
+        
+                .hero-img-cont {
+                    min-width: 570px;
+                    min-height: 490px;
+                    
+                }
+            }
+        }
+    }
+    @media screen and (min-width:1280px) {
         .hero{
             .hero-btn-list {
                     padding-top: 20px;
@@ -194,14 +218,30 @@
                     & li:nth-child(3),
                     & li:nth-child(4),
                     & li:nth-child(5) {
-                        display: flex;
-                        background-color: transparent;
-                        align-items: center;
-                        justify-content: space-between;
-                        padding: 15px;
-                       
-
+                        display: block;
                     }
-                }
+                    & button{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        padding: 10px;
+                        background-color: transparent;
+                        width: 202px;
+                        height: 40px;
+                        flex-shrink: 0;
+                        border-radius:90px ;
+                        border: 1px solid @dark-green;
+                        color: #000;
+                        text-align: center;
+                        font-family: Montserrat;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        text-transform: uppercase;
+                    }
+}
         }
+        
     }
