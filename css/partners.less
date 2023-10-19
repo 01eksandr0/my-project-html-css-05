@@ -1,0 +1,66 @@
+//main:style.less
+.partners{
+    padding: 35px 0;
+    .partners-container{
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        .partners-title{
+        text-align: center;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 20px;
+        }
+        .partners-list{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            .partners-link{
+            width: 255px;
+            height: 126px;
+            flex-shrink: 0;
+            border-radius: 20px;
+            background-color: #FFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+        }
+                .partner-slide-btn {
+                    width: 70px;
+                    height: 70px;
+                    flex-shrink: 0;
+                    background-color: @light-green;
+                    border: 1px solid @light-green;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    transition: background-color 250ms ease-in-out, border-color 250ms ease-in-out;
+        
+                    &:hover,
+                    &:focus {
+                        background-color: darken(@light-green, 10%);
+                        border-color: darken(@light-green, 10%);
+                    }
+                }
+        
+                .partner-slide-btn-first {
+                    position: absolute;
+                    left: 10px;
+                    top: 50%;
+                }
+        
+                .partner-slide-btn-second {
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    transform: rotate(180deg);
+                }
+    }
+}

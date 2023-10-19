@@ -1,0 +1,166 @@
+//main:style.less
+.promotion {
+    padding: 25px 0;
+    background-color: @dark-green;
+
+    .promotion-container {
+        position: relative;
+        overflow: hidden;
+
+        .promotion-title {
+            color: #000;
+            font-family: Montserrat;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: center;
+            margin: 0 auto 15px;
+        }
+
+        .promotion-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            .promotion-item {
+                width: 255px;
+                height: 355px;
+                flex-shrink: 0;
+                background-color: #fff;
+                border-radius: 20px;
+                position: relative;
+                padding: 30px 10px 10px 10px;
+
+                & img {
+                    margin: 0 auto 30px;
+                }
+
+                &>button {
+                    position: absolute;
+                    border: none;
+                    background-color: transparent;
+                    line-height: 0;
+                    top: 20px;
+                    right: 20px;
+                }
+
+                &>div {
+                    width: 235px;
+                    height: 150px;
+                    flex-shrink: 0;
+                    border-radius: 20px;
+                    background-color: rgba(140, 50, 19, 0.06);
+                    padding: 20px 20px 30px 20px;
+                    position: relative;
+
+                    & h3 {
+                        color: #000;
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+
+                    & .promotion-paragraph {
+                        color: @dark-green;
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        margin-bottom: 30px;
+                    }
+
+                    & .promotion-coin {
+                        color: @light-green;
+                        font-family: Montserrat;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    & .promotion-btn-shop {
+                        border: none;
+                        background-color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        bottom: 25px;
+                        right: 20px;
+                        width: 47px;
+                        height: 47px;
+                        border-radius: 50%;
+                        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+                    }
+                }
+            }
+        }
+
+        .promotion-slide-btn {
+            width: 70px;
+            height: 70px;
+            flex-shrink: 0;
+            background-color: transparent;
+            border: 1px solid @light-green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background-color 250ms ease-in-out, border-color 250ms ease-in-out;
+
+            &:hover,
+            &:focus {
+                background-color: darken(@dark-green,10%);
+                border-color:darken(@dark-green, 10%);
+            }
+        }
+
+        .promotion-slide-btn-first {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+        }
+
+        .promotion-slide-btn-second {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: rotate(180deg);
+        }
+        .promotion-btn{
+            width: 290px;
+            height: 47px;
+            flex-shrink: 0;
+            background-color: @orange;
+            border-radius: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px auto;
+            border: none;
+            color: #fff;
+            font-family: Montserrat;
+            transition: background-color 250ms ease-in-out;
+            &:hover,
+            &:focus{
+                background-color: darken(@orange,10%);
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .promotion {
+        .promotion-container {
+            .promotion-title {
+                font-size: 45px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

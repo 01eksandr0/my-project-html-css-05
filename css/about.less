@@ -1,0 +1,66 @@
+//main:style.less
+.about{
+    padding: 40px 0;
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        gap: 40px;
+        .about-img-container {
+                min-width: 290px;
+                min-height: 236px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                border-top-right-radius: 50%;
+                border-bottom-left-radius: 50%;
+            }
+            .about-text-container{
+                .about-title{
+                    margin-bottom: 20px;
+                }
+                .about-paragraph{
+                    color: rgba(0, 0, 0, 0.50);
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom:15px ;
+                    &>span{
+                        font-weight: 600;
+                        color: @dark-green;
+                    }
+                    
+                }
+                                .about-btn {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    background-color: @orange;
+                                    color: #fff;
+                                    width: 290px;
+                                    height: 47px;
+                                    font-family: Montserrat;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    margin: 0 auto;
+                                    border-radius: 90px;
+                                }
+            }
+    }
+}
+@media screen and (min-width:1280px) {
+    .about{
+        .about-container{
+            flex-direction: row;
+            justify-content: space-between;
+            .about-img-container{
+                flex-shrink: 0;
+                width: 600px;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+//main:style.less
+.seeds{
+    padding: 35px 0;
+    background-image: url(../img/seeds/seeds-bg-img-desctop.jpg);
+    background-position: center;
+    background-size: cover;
+    .seeds-title{
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+    .seeds-paragraph{
+        color: rgba(255, 255, 255, 0.60);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width:767px) {
+.seeds{
+    .seeds-paragraph-part{
+        display: none;
+    }
+}
+}
+@media screen and (min-width:700px) {
+    .seeds{
+        padding: 100px;
+        .seeds-title{
+            font-size: 45px;
+        }
+    }
+}
