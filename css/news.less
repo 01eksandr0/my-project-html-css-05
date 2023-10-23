@@ -4,6 +4,9 @@
     .news-container{
         position: relative;
         overflow: hidden;
+        padding-top: 30px;
+        height: 450px;
+        
         .news-title{
             color: #000;
             font-family: Montserrat;
@@ -12,21 +15,30 @@
             font-weight: 700;
             line-height: normal;
             text-align: center;
-            margin: 0 auto 15px;
+            margin: 0 auto;
         }
+        .news-lister{
+            position: relative;
+            left: 140px;
+            bottom: -50px;
+            
         .news-list{
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 30px;
+            height: 280px;
+            width: 100% ;
+            position: relative;
+            transition: all 500ms ease-in-out;
             .news-item{
                 width: 255px;
                 height: 355px;
                 flex-shrink: 0;
                 background-color: #fff;
                 border-radius: 20px;
-                position: relative;
                 padding: 30px 10px 10px 10px;
+position: relative;
                 & img{
                    margin: 0 auto 30px;
                 }
@@ -88,6 +100,7 @@
                 }
             }
         }
+    }
         .news-slide-btn{
             width: 70px;
             height: 70px;
@@ -121,6 +134,7 @@
 @media screen and (min-width:1200px) {
     .news{
         .news-container{
+            padding-bottom: 500px;
             .news-title{
                 font-size: 45px;
                 margin-bottom: 50px;
