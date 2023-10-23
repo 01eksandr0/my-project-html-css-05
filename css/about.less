@@ -48,6 +48,12 @@
                                     font-weight: 700;
                                     margin: 0 auto;
                                     border-radius: 90px;
+                                    transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
+                                    &:hover,
+                                    &:focus{
+                                        background-color: lighten(@orange,10%);
+                                        border: 1px solid @orange;
+                                    }
                                 }
             }
     }

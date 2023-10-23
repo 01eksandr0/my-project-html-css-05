@@ -108,7 +108,12 @@
                 font-weight: 600;
                 line-height: normal;
                 text-transform: uppercase;
-        
+                transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
+                &:hover,
+                &:focus{
+                    background-color: lighten(@orange, 10%);
+                    border: 1px solid @orange;
+                }
             }
         }
         .hero-content{
@@ -162,6 +167,12 @@
                 font-weight: 700;
                 line-height: normal;
                 margin: 40px auto;
+                transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
+                &:hover,
+                &:focus{
+                    background-color: lighten(@orange,10%);
+                    border: 1px solid @orange;
+                }
             }
         }
 }
@@ -221,7 +232,7 @@
                     & li:nth-child(5) {
                         display: block;
                     }
-                    & button{
+                    & .hero-link{
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -241,6 +252,13 @@
                         font-weight: 700;
                         line-height: normal;
                         text-transform: uppercase;
+                        transition: background-color 250ms ease-in-out, border 250ms ease-in-out, color 250ms ease-in-out;
+                        &:hover,
+                        &:focus{
+                            background-color: @dark-green;
+                            border: none;
+                            color: #FFF;
+                        }
                     }
 }
         }

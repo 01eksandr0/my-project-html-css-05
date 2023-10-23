@@ -96,7 +96,7 @@
                 position: absolute;
                 display: flex;
                 align-items: center;
-                justify-content: start;
+                justify-content: center;
                 flex-direction: column;
                 padding-top: 30px;
                 width: 65px;
@@ -106,9 +106,14 @@
                 border-top-left-radius: 30px;
                 background-color: @light-green;
                 border: none;
-             
                 bottom: -100%;
                 right: 40px;
+                transition: background-color 250ms ease-in-out;
+                &:hover,
+                &:focus{
+                    background-color: darken(@light-green,20%);
+                    justify-content:start;
+                }
             }
 
         }
