@@ -13,7 +13,7 @@ document
   .querySelector(".news-slide-btn-first")
   .addEventListener("click", function () {
     offset -= 255 + 30;
-    if (offset < 0) {
+    if (offset < -285) {
       offset = 255 + 30 + 255 + 30;
     }
     slider.style.left = -offset + "px";
