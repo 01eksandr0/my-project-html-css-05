@@ -54,7 +54,7 @@
             <li><p class="header-nav-link">|</p></li>
             <li><a class="header-nav-link" href="">Реестрація</a></li>
           </ul>
-          <button class="header-btn-menu" type="button">
+          <button class="header-btn-menu" type="button" id="btn-open-menu">
             <svg width="28" height="28">
               <use href="./img/icons/icons-sprait.svg#icon-menu"></use>
             </svg>
@@ -716,7 +716,8 @@
       </div>
     </footer>
     <!-- MOBAIL MENU -->
-    <div class="mobail-menu">
+
+    <div class="mobail-menu" id="mobil-menu-burger">
       <div class="mobail-menu-header">
         <div class="mobail-menu-list-plus-menu">
           <ul class="mobail-menu-list">
@@ -731,7 +732,11 @@
             <li><p class="mobail-menu-link">|</p></li>
             <li><a class="mobail-menu-link" href="">Реестрація</a></li>
           </ul>
-          <button class="mobail-menu-btn-menu" type="button">
+          <button
+            class="mobail-menu-btn-menu"
+            type="button"
+            id="btn-close-burger"
+          >
             <svg width="28" height="28">
               <use href="./img/icons/icons-sprait.svg#icon-close"></use>
             </svg>
@@ -829,5 +834,6 @@
         </ul>
       </nav>
     </div>
+    <script src="./js/mobail-menu.js"></script>
   </body>
 </html>
