@@ -17,7 +17,7 @@
         }
         .partners-slider{
             position: relative;
-            left: 20px;
+            left:-220px;
             height: 155px;
         
         .partners-list{
@@ -71,5 +71,23 @@
                     right: 10px;
                     transform: rotate(180deg);
                 }
+    }
+}
+@media screen and (min-width:768px) {
+    .partners {
+            .partners-container {
+                .partners-slider {
+                    left: -20px;
+                }
+            }
+        }
+}
+@media screen and (min-width:1000px) {
+    .partners{
+        .partners-container{
+            .partners-slider{
+                left: 255px;
+            }
+        }
     }
 }
