@@ -1,0 +1,132 @@
+// main: style.less
+.form-section {
+    padding: 30px 0;
+    .form-title{
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+    .form-subtitle{
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &-part{
+            display: none;
+        }
+        }
+        .form {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-direction: column;
+            margin: 20px auto;
+      
+            .form-input{
+                border-radius: 90px;
+                border: 1px solid rgba(0, 0, 0, 0.20);
+                background: #FFF;
+                outline: transparent;
+                width: 287px;
+                height: 40px;
+                flex-shrink: 0;
+                padding: 10px 10px 10px 20px;
+                &::placeholder{
+                    color: #484848;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                &:checked,
+                &:focus{
+                    border:2px solid @light-green ;
+                }
+            }
+            .form-input-container{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .form-label{
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                .form-checkbox-castom{
+                    width: 23px;
+                    height: 23px;
+                    border:1px solid @light-green;
+                    border-radius: 4px;
+                    position: relative;
+                    fill: transparent;
+                    .form-svg-castom{
+                        position: absolute;
+                        top: -7px;
+                        left: -2px;
+                    }
+                }
+            }
+        .form-input-check:checked+.form-label>.form-checkbox-castom {
+         fill: @dark-green;
+         border: 2px solid @dark-green;
+         }
+         .form-btn{
+            flex-shrink: 0;
+            width: 100%;
+            height: 47px;
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            border: none;
+            background-color: @orange;
+            border-radius: 90px;
+            transition: background-color 250ms ease-in-out;
+            &:hover,
+            &:focus{
+                background-color: lighten(@orange,10%);
+            }
+         }
+    }
+}
+@media screen and (min-width:768px) {
+    .form-section{
+        .form-title{
+            font-size: 45px;
+        }
+        .form-subtitle{
+            font-size: 16px;
+            &-part{
+                display: inline;
+            }
+        }
+        .form{
+            width: 540px;
+            .form-input-container{
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap:  20px 30px;
+                input{
+                width: 255px;
+                }
+            }
+                        &>.form-input-password {
+                            width: 540px;
+                        }
+        }
+    }
+}
