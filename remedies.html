@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Форма регістрації</title>
+    <title>Засоби захисту рослин</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -57,7 +57,6 @@
         </div>
       </div>
     </header>
-    <!-- MAIN -->
     <main>
       <section class="hero hero-form">
         <div class="container">
@@ -147,21 +146,12 @@
                 </svg>
               </button>
               <ul class="hero-sicret-menu">
-                <li><a href="./remedies.html">Засоби захисту рослин</a></li>
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
               </ul>
             </li>
 
-            <li>
-              <a class="hero-link" href="">
-                <svg width="24" height="24">
-                  <use href="./img/icons/icons-sprait.svg#icon-sapling"></use>
-                </svg>
-                Засоби захисту рослин
-              </a>
-            </li>
             <li>
               <a class="hero-link" href="">
                 <svg width="24" height="24">
@@ -191,58 +181,44 @@
           </ul>
         </div>
       </section>
-      <section class="form-section">
+      <!-- section remedies -->
+      <section class="remedies">
         <div class="container">
-          <h1 class="form-title">
-            <svg width="32" height="25">
+          <h1 class="remedies-title">
+            <svg width="20" height="20">
               <use href="./img/icons/icons-sprait.svg#icon-list"></use>
             </svg>
-            Реєстрація<svg width="32" height="25">
+            Засоби захисту рослин
+            <svg width="20" height="20">
               <use href="./img/icons/icons-sprait.svg#icon-list"></use>
             </svg>
           </h1>
-          <p class="form-subtitle">
-            Увійдіть, щоб використовувати всі можливості особистого
-            кабінету<span class="form-subtitle-part"
-              >: відстеження замовлень, налаштування передплати, зв'язки з
-              соціальними мережами та інші. Ми ніколи і за жодних умов не
-              розголошуємо особисті дані клієнтів. Контактна інформація буде
-              використана тільки для оформлення замовлень та зручнішої роботи з
-              сайтом</span
-            >
-          </p>
-          <form class="form">
-            <div class="form-input-container">
-              <input type="text" class="form-input" placeholder="Ім’я" />
-              <input type="text" class="form-input" placeholder="Прізвище" />
-              <input type="tel" class="form-input" placeholder="Телефон" />
-              <input type="email" class="form-input" placeholder="E-mail" />
-            </div>
-            <input
-              type="password"
-              class="form-input form-input-password"
-              placeholder="Пароль"
-            />
-            <input
-              type="password"
-              class="form-input form-input-password"
-              placeholder="Підтвердити пароль"
-            />
-            <input
-              type="checkbox"
-              class="form-input-check visually-hidden"
-              id="form-check"
-            />
-            <label for="form-check" class="form-label"
-              ><span class="form-checkbox-castom"
-                ><svg class="form-svg-castom" width="29" height="29">
-                  <use href="./img/icons/icons-sprait.svg#icon-check"></use>
-                </svg>
-              </span>
-              я згоден на обробку і захист персональних даних</label
-            >
-            <button class="form-btn">Зареєструватися</button>
-          </form>
+          <ul class="remedies-list">
+            <li class="remedies-item">
+              <img src="" alt="" />
+              <p class="remedies-img-subtitle"></p>
+            </li>
+            <li class="remedies-item">
+              <img src="" alt="" />
+              <p class="remedies-img-subtitle"></p>
+            </li>
+            <li class="remedies-item">
+              <img src="" alt="" />
+              <p class="remedies-img-subtitle"></p>
+            </li>
+            <li class="remedies-item">
+              <img src="" alt="" />
+              <p class="remedies-img-subtitle"></p>
+            </li>
+            <li class="remedies-item">
+              <img src="" alt="" />
+              <p class="remedies-img-subtitle"></p>
+            </li>
+            <li class="remedies-item">
+              <img src="" alt="" />
+              <p class="remedies-img-subtitle"></p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -331,12 +307,19 @@
             <li>
               <a
                 class="mobail-menu-link mobail-menu-plus-svg"
-                href="./index.html"
-                ><svg class="header-svg" width="30" height="30">
+                href="./form-avtorisation.html"
+              >
+                <svg class="header-svg" width="30" height="30">
                   <use href="./img/icons/icons-sprait.svg#icon-log-door"></use>
                 </svg>
-                На головну
-              </a>
+                Вхід</a
+              >
+            </li>
+            <li><p class="mobail-menu-link">|</p></li>
+            <li>
+              <a class="mobail-menu-link" href="./form-avtorisation.html"
+                >Реестрація</a
+              >
             </li>
           </ul>
           <button
@@ -441,6 +424,7 @@
         </ul>
       </nav>
     </div>
+    <script src="./js/slider-news.js"></script>
     <script src="./js/mobail-menu.js"></script>
   </body>
 </html>

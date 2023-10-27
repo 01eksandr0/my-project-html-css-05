@@ -65,7 +65,7 @@
                     }
                 }
                 .hero-menu-span{
-                    color: #84BE51;
+                    color: @light-green;
                     font-family: Montserrat;
                     font-size: 14px;
                     font-style: normal;
@@ -119,6 +119,7 @@
                 font-weight: 600;
                 line-height: normal;
                 text-transform: uppercase;
+                border: none;
                 transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
                 &:hover,
                 &:focus{
@@ -275,3 +276,47 @@
         }
         
     }
+    // [[[[[[
+        .hero-menu{
+            position: relative;
+            .hero-sicret-menu{
+                background-color: transparent;
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                position: absolute;
+                height: 170px;
+                width: 90%;
+                margin: 0 auto;
+                z-index: -3;
+                border-radius: 0 0 10px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                padding: 20px;
+                transition: background-color 250ms ease-in-out, z-index 250ms ease-in-out;
+                &  a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 18;
+                    font-weight: 700;
+                }
+            }
+            .hero-link-btn:focus + .hero-sicret-menu{
+                z-index: 1;
+                background-color:@orange;
+                position: relative;
+            }
+            .hero-link-btn:focus > .hero-link-btn-svg{
+                transform: rotate(180deg);
+            }
+        }
+        @media screen and (min-width:1280px) {
+            .hero-menu{
+                display: none;
+            }
+        }
