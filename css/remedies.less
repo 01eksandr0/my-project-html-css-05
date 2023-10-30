@@ -1,0 +1,80 @@
+// main: style.less
+.remedies{
+    padding: 30px 0;
+    .remedies-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    .remedies-title{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+    .remedies-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        .remedies-item{
+            width: 134px;
+            height: 86px;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+            border-radius: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .remedies-img{
+            width: 145px;
+            height: 90px;
+            flex-shrink: 0;
+            }
+            .remedies-img-subtitle{
+                position: absolute;
+                flex-shrink: 0;
+                color: #000;
+                width: 133px;
+                height: 26px;
+                font-weight: 600;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                bottom:0px;
+                
+            }
+        }
+    }
+} 
+}
+@media screen and (min-width:1280px) {
+    .remedies{
+        .remedies-container{
+            .remedies-title{
+
+            }
+            .remedies-list{
+                .remedies-item {
+                        width: 255.636px;
+                        height: 164.145px;
+                
+                        .remedies-img {
+                            width: 265.636px;
+                            height: 180.145px;
+                        }
+                        .remedies-img-subtitle{
+                            width: 254.634px;
+                            height: 21.018px;
+                            padding:18px ;
+                            font-size: 22px;
+                        }
+                    }
+            }
+        }
+    }
+}
