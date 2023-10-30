@@ -140,11 +140,11 @@
               </a>
             </li>
             <li class="hero-list-shop">
-              <a class="svg-max" href=""
-                ><svg width="16" height="16">
+              <button type="button" class="svg-max btn-open-form">
+                <svg width="16" height="16">
                   <use href="./img/icons/icons-sprait.svg#icon-shopping"></use>
                 </svg>
-              </a>
+              </button>
               <p>0,0грн</p>
             </li>
           </ul>
@@ -924,7 +924,74 @@
         </ul>
       </nav>
     </div>
+    <!-- FORM BUY -->
+    <div class="form-buy-dad">
+      <div class="form-buy">
+        <div class="form-buy-title-cont">
+          <h2 class="form-buy-title">
+            <svg width="14" height="11">
+              <use href="./img/icons/icons-sprait.svg#icon-list"></use>
+            </svg>
+            Кошик
+            <svg width="14" height="11">
+              <use href="./img/icons/icons-sprait.svg#icon-list"></use>
+            </svg>
+          </h2>
+          <button type="button" class="form-btn-close">
+            <svg width="20" height="20">
+              <use href="./img/icons/icons-sprait.svg#icon-cancel"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- OBJECT  -->
+        <div class="form-prod">
+          <div class="aaa">
+            <h3 class="form-buy-title-prod">Гербіцид Комманд®, ФМС УКРАЇНА</h3>
+            <div class="form-buy-img-cont">
+              <img
+                src="./img/news/news-img-a.jpg"
+                alt=""
+                width="81"
+                height="115"
+              />
+            </div>
+          </div>
+          <div class="aaa">
+            <p class="form-prod-price">
+              Ціна за 1 шт: <span class="form-prod-price-part">грн</span>
+            </p>
+            <p class="form-prod-made">
+              Виробник<br /><span class="form-prod-made-part">ФМС Украина</span>
+            </p>
+            <div class="form-buy-quantity">
+              <p class="form-buy-paragraph-qu">Кількість</p>
+              <button class="form-buy-minus" type="button">-</button>
+              <p class="form-quantity">0</p>
+              <button class="form-buy-plus" type="button">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="form-buy-btn-dad">
+          <p class="form-buy-total">
+            Усього до сплати: <span class="form-buy-total-part">грн</span>
+          </p>
+          <button type="button" class="form-btn-close-second">
+            <svg width="16" height="17">
+              <use href="./img/icons/icons-sprait.svg#icon-shopping-cart"></use>
+            </svg>
+            Продовжити покупки
+          </button>
+          <a href="" class="form-buy-shop-btn">
+            <svg width="20" height="20">
+              <use href="./img/icons/icons-sprait.svg#icon-clipboard"></use>
+            </svg>
+            Оформити заказ</a
+          >
+        </div>
+      </div>
+    </div>
     <script src="./js/slider-news.js"></script>
     <script src="./js/mobail-menu.js"></script>
+    <script type="module" src="./js/form-buy.js"></script>
   </body>
 </html>
