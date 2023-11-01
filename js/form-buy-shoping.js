@@ -1,6 +1,6 @@
 const dadWraper = document.querySelector(".form-add");
 const shopButtons = document.querySelectorAll(".shop-btn");
-
+// Работа с добавлением товара
 shopButtons.forEach((button) => {
   button.addEventListener("click", (event) => {
     const cart = event.target.closest(".cart");
@@ -24,7 +24,9 @@ shopButtons.forEach((button) => {
               </div>
             </div>
             <div class="aaa">               <p class="form-prod-price">
-                 Ціна за 1 шт: <span class="form-prod-price-part">${prodactInfo.price}</span>
+                 Ціна за 1 шт: <span class="form-prod-price-part">${
+                   prodactInfo.price
+                 }</span>
                </p>
                <p class="form-prod-made">
                  Виробник<br /><span class="form-prod-made-part"                   >ФМС Украина</span
@@ -33,7 +35,7 @@ shopButtons.forEach((button) => {
               <div class="form-buy-quantity">
                  <p class="form-buy-paragraph-qu">Кількість</p>
                  <button class="form-buy-minus" type="button">-</button>
-                 <p class="form-quantity">1</p>
+                 <p class="form-quantity">${1}</p>
                  <button class="form-buy-plus" type="button">+</button>
                </div>
              </div>
@@ -45,5 +47,39 @@ shopButtons.forEach((button) => {
     } else {
       dadWraper.insertAdjacentHTML("beforeend", cartItem);
     }
+    // Настройка количества товаров
+    const btnMinus = document.querySelector(".form-buy-minus");
+    const btnPlus = document.querySelector(".form-buy-plus");
+    let valueCounter = document.querySelector(".form-quantity");
+    let counter = parseInt(valueCounter.innerText);
+    let totalShop = document.querySelector(".form-buy-total-part-number");
+    let indexItem = document.querySelector(".hero-list-shop-index");
+    btnMinus.addEventListener("click", () => {
+      counter -= 1;
+      valueCounter.textContent = counter;
+
+      let total = counter * parseInt(prodactInfo.price);
+      totalShop.textContent = total;
+      heroTotal.textContent = totalShop.textContent;
+      indexItem.textContent = counter;
+      if (counter < 1) {
+        dadWraper.remove(cartItem);
+      }
+    });
+    btnPlus.addEventListener("click", () => {
+      counter += 1;
+      valueCounter.textContent = counter;
+
+      let total = counter * parseInt(prodactInfo.price);
+      totalShop.textContent = total;
+      heroTotal.textContent = totalShop.textContent;
+      indexItem.textContent = counter;
+    });
+
+    let total = counter * parseInt(prodactInfo.price);
+    totalShop.textContent = total;
+    let heroTotal = document.querySelector(".totalShopHero");
+    heroTotal.textContent = totalShop.textContent;
+    indexItem.textContent = counter;
   });
 });
