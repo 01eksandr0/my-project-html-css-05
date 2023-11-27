@@ -54,6 +54,16 @@ shopButtons.forEach((button) => {
     let counter = parseInt(valueCounter.innerText);
     let totalShop = document.querySelector(".form-buy-total-part-number");
     let indexItem = document.querySelector(".hero-list-shop-index");
+    if (parseInt(indexItem.textContent) !== "") {
+      indexItem.style.borderColor = "rgb(220, 13, 13)";
+    }
+    if (
+      parseInt(indexItem.textContent) === 0 ||
+      parseInt(indexItem.textContent) === ""
+    ) {
+      indexItem.style.borderColor = "transparent";
+      indexItem.style.display = "";
+    }
     btnMinus.addEventListener("click", () => {
       counter -= 1;
       valueCounter.textContent = counter;
