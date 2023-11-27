@@ -213,19 +213,35 @@
           </p>
           <form class="form">
             <div class="form-input-container">
-              <input type="text" class="form-input" placeholder="Ім’я" />
-              <input type="text" class="form-input" placeholder="Прізвище" />
-              <input type="tel" class="form-input" placeholder="Телефон" />
-              <input type="email" class="form-input" placeholder="E-mail" />
+              <input
+                type="text"
+                class="form-input user-name"
+                placeholder="Ім’я"
+              />
+              <input
+                type="text"
+                class="form-input user-sername"
+                placeholder="Прізвище"
+              />
+              <input
+                type="tel"
+                class="form-input user-tell"
+                placeholder="Телефон"
+              />
+              <input
+                type="email"
+                class="form-input user-email"
+                placeholder="E-mail"
+              />
             </div>
             <input
               type="password"
-              class="form-input form-input-password"
+              class="form-input form-input-password user-password"
               placeholder="Пароль"
             />
             <input
               type="password"
-              class="form-input form-input-password"
+              class="form-input form-input-password user-chec-pass"
               placeholder="Підтвердити пароль"
             />
             <input
@@ -241,7 +257,7 @@
               </span>
               я згоден на обробку і захист персональних даних</label
             >
-            <button class="form-btn">Зареєструватися</button>
+            <button type="submit" class="form-btn">Зареєструватися</button>
           </form>
         </div>
       </section>
@@ -440,6 +456,12 @@
           <li><a href="" class="mob-nav-link">Контакти</a></li>
         </ul>
       </nav>
+    </div>
+    <!-- WINDOW -->
+    <div class="window-container">
+      <p class="window-text">
+        Дякуємо за реєстрацію <span class="add-window-text"></span>
+      </p>
     </div>
     <script src="./js/mobail-menu.js"></script>
   </body>
